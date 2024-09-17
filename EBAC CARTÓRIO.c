@@ -133,6 +133,7 @@ void deletar()
             printf ("\t1 Registrar  nomes\n");
             printf ("\t2 Consultar nomes\n");
             printf ("\t3 Deletar nomes\n"); // fim do menu
+            printf ("\t4 Sair do sistema\n");
             
             scanf("%d", &opcao); // armazenando a escolha do usuário
             
@@ -150,6 +151,11 @@ void deletar()
                     
                 case 3:
                     deletar();
+                    break;
+                    
+                case 4:
+                    printf ("Obrigado por utilizar o sistema!\n");
+                    return 0;
                     break;
                     
                 default:
